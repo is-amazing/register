@@ -12,7 +12,7 @@ We are a group of people who want to help developers have a platform to showcase
 ## Registration
 
 1. Create a static site with some hosting providers, some being: [Github pages]("https://pages.github.com"), [Cloudflare pages]("https://pages.cloudflare.com"), etc.
-2. After setting up your site, [Fork](https://github.com/is-really-cool/register/fork) this repo and under domains.json, add your domain in the format of `"subdomain": "page url"`. After that, run npm run sort to sort all the domains alphabetically.
+2. After setting up your site, [Fork](https://github.com/is-really-cool/register/fork) this repo and under subdomains.json, add your domain in the format of `"subdomain": "page url"`. After that, run npm run sort to sort all the domains alphabetically.
 3. Send your pull request, and your request will be reviewed and merged. Do keep an eye on it!~
 4. After your request has been merged, please give us up to 24 hours for the servers to propagate the changes. 
 5. Enjoy your new `is-really.cool` domain!! 🥳
