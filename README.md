@@ -27,15 +27,7 @@ We are a group of people who want to help developers have a platform to showcase
 ## Donate
 
 This service cannot be going on forever without your help, Thank you all!
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('isreallycool', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#323842',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E8GE56L)
 
 ## Thanks
 Thanks to is-a.dev and thedev.id for the huge help and inspiration in this project. More updates will be pushed out soon!
