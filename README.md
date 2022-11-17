@@ -1,4 +1,4 @@
-<center><img src="https://i.ibb.co/DL4gxNX/logo-small.png"></center>
+<p align="center"><img src="https://i.ibb.co/DL4gxNX/logo-small.png" /></p>
 
 <h1 align="center">is-really.cool</h1>
 
