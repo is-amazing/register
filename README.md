@@ -1,4 +1,4 @@
-![Logo image](https://i.ibb.co/DL4gxNX/logo-small.png)
+<center><img src="https://i.ibb.co/DL4gxNX/logo-small.png"></center>
 
 <h1 align="center">is-really.cool</h1>
 
