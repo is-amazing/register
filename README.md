@@ -26,7 +26,7 @@ We are a group of people who want to help developers have a platform to showcase
 
 ## Donate
 
-This service cannot be going on forever without your help, Thank you all!
+This service cannot be going on forever without your help, Thank you all!  
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E8GE56L)
 
 ## Thanks
