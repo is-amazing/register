@@ -29,6 +29,11 @@ We are a group of people who want to help developers have a platform to showcase
 This service cannot be going on forever without your help, Thank you all!  
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E8GE56L)
 
+## Contact
+
+You can contact us at help@is-really.cool
+
+
 ## Thanks
 Thanks to is-a.dev and thedev.id for the huge help and inspiration in this project. More updates will be pushed out soon!
 
