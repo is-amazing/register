@@ -1,7 +1,5 @@
 { 
-  "domain": {
   "subdomain": "joabutt",
   "url": "joabuttisadev.pages.dev",
-  "email": "me@joabutt.dev"
-  }
+  "email": "me@joabutt.dev",
 }
