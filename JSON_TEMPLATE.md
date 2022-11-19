@@ -10,7 +10,7 @@ Please follow the template given here or your pull request will not be accepted 
 
     "subdomain": "YOUR_SUBDOMAIN_HERE",  
     "record":  "YOUR_SITE_URL_HERE",
-    "email": "YOUR_EMAIL_HERE",
+    "email": "YOUR_EMAIL_HERE"
 
 }
 ```
