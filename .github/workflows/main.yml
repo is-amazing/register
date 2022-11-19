@@ -10,4 +10,4 @@ jobs:
     - name: curl
       uses: wei/curl@master
       with:
-        args: https://reallycoolapi.loca.lt
+        args: https://reallycoolapi.loca.lt/addnew
