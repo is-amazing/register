@@ -2,7 +2,7 @@
 
 Please follow the template given here or your pull request will not be accepted or merged.
 
-### IMPORTANT: Please name your JSON file the subdomain you wish to have. If your subdomain in the JSON file does not match the file name, your PR will NOT be merged.
+### IMPORTANT: Please name your JSON file the subdomain you wish to have. If your subdomain in the JSON file does not match the file name, your PR will NOT be merged. Also please do **NOT** have a comma after your email, as it will cause internal server errors.
 
 ## Template:
 ```
