@@ -1,3 +1,6 @@
+name: Register Domain
+
+
 on: 
   pull_request_target:
     types:
