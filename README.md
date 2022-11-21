@@ -11,7 +11,7 @@ We are a group of people who want to help developers have a platform to showcase
 
 ## Registration
 
-1. Create a static site with some hosting providers, some being: [Github pages]("https://pages.github.com"), [Cloudflare pages]("https://pages.cloudflare.com"), etc.
+1. Create a static site with some hosting providers, some being: [Github pages]("https://pages.github.com"), [Surge]("https://surge.sh"), etc.
 2. After setting up your site, [Fork](https://github.com/is-really-cool/register/fork) this repo and under the domains folder, then read the file template [Here](https://github.com/is-really-cool/register/blob/main/JSON_TEMPLATE.md). If yourfile does not follow the required template, your pull request will **NOT** be merged. After reading the template, you can add your json file under the domains folder, and then create a pull request.
 3. Send your pull request, and your request will be reviewed and if the requirements are met, will be merged. Do keep an eye on it!~
 4. After your request has been merged, please give us up to 24 hours for the servers to propagate the changes. 
