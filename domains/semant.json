@@ -1,5 +1,5 @@
 { 
   "subdomain": "semant",
-  "url": "semant.is-a.dev",
+  "cname": "semant.up.railway.app",
   "email": "contact@semant.is-a.dev"
 }
