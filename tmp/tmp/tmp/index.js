@@ -6,7 +6,6 @@ const axios = require("axios")
 const fs = require("fs")
 const jsonFormat = require("json-format");
 app.listen(PORT, () => console.log(`Coffee ready at ${PORT}, Caffeine ftw`))
-require('dotenv').config();
 
 
 
@@ -17,7 +16,7 @@ app.get("/check/:subdomain", async (req, res) => {
     const response = await axios.get(`https://api.cloudflare.com/client/v4/zones/d76cdc117a7173dd501a5f212176c203/dns_records?type=CNAME&name=${req.params.subdomain}.is-really.cool`, {
     headers: {
         'X-Auth-Email': 'leejoab75@gmail.com',
-        'X-Auth-Key': process.env.API_KEY,
+        'X-Auth-Key': '60e5bb86dec42085c58ae1a85ede97a44f00c',
         'Content-Type': 'application/json'
     }
     });
@@ -39,7 +38,7 @@ app.get("/addnew", async (req, res) => {
     
     
     
-    fs.promises.readdir("./domains").then(filenames => {
+    fs.promises.readdir("../domains").then(filenames => {
  
         const prefinal = JSON.stringify(filenames)
         const final = prefinal.replaceAll(".json", "");
@@ -48,7 +47,7 @@ app.get("/addnew", async (req, res) => {
     })
     
     
-    fs.promises.readdir("./domains")
+    fs.promises.readdir("../domains")
     .then(async filenames => {
 
             
@@ -67,7 +66,7 @@ app.get("/addnew", async (req, res) => {
 
                 const finalname = filename.replaceAll(".json","");
 
-                const response = await axios.get(`https://api.is-really.cool/check/${finalname}`).then((response) => {
+                const response = await axios.get(`http://localhost:3000/check/${finalname}`).then((response) => {
 
                     if (response.data == "unavailable"){
                         console.log(`${finalname}.is-really.cool is already present.`)
@@ -76,7 +75,7 @@ app.get("/addnew", async (req, res) => {
                         const final = prefinal.replaceAll(".json", "");
                         const realfinal = final.replaceAll('"', '')
     
-                        const filedata = fs.promises.readFile(`./domains/${filename}`)
+                        const filedata = fs.promises.readFile(`../domains/${filename}`)
                         .then(async function(result) {
                             const newres = JSON.parse(result)
     
@@ -94,7 +93,7 @@ app.get("/addnew", async (req, res) => {
                                 {
                                     headers: {
                                         'X-Auth-Email': 'leejoab75@gmail.com',
-                                        'X-Auth-Key': process.env.API_KEY,
+                                        'X-Auth-Key': '60e5bb86dec42085c58ae1a85ede97a44f00c',
                                         'Content-Type': 'application/json'
                                     }
                                 }

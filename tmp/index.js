@@ -67,7 +67,7 @@ app.get("/addnew", async (req, res) => {
 
                 const finalname = filename.replaceAll(".json","");
 
-                const response = await axios.get(`https://api.is-really.cool/check/${finalname}`).then((response) => {
+                const response = await axios.get(`http://localhost:3000/check/${finalname}`).then((response) => {
 
                     if (response.data == "unavailable"){
                         console.log(`${finalname}.is-really.cool is already present.`)
