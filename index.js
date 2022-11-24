@@ -5,7 +5,7 @@ const PORT = 3000
 const axios = require("axios")
 const fs = require("fs")
 const jsonFormat = require("json-format");
-app.listen(PORT, () => console.log(`Coffee ready at ${PORT}, Caffeine ftw`))
+app.listen(PORT, () => console.log(`Updates at ${PORT}!!`))
 require('dotenv').config();
 
 
@@ -67,7 +67,7 @@ app.get("/addnew", async (req, res) => {
 
                 const finalname = filename.replaceAll(".json","");
 
-                const response = await axios.get(`https://api.is-really.cool/check/${finalname}`).then((response) => {
+                const response = await axios.get(`https://4z2do1.deta.dev/check/${finalname}`).then((response) => {
 
                     if (response.data == "unavailable"){
                         console.log(`${finalname}.is-really.cool is already present.`)

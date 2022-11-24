@@ -1,1 +1,0 @@
-{"id":"7794ff83-856d-4aba-a760-46d0507b13d9","space":34102,"runtime":"nodejs14.x","name":"api","path":"4z2do1","project":"c08joyf8","account":"144798365827","region":"ap-southeast-1","deps":["axios@^1.1.3","express@^4.18.2","fs@^0.0.1-security","json-format@^1.0.1","dotenv@^16.0.3"],"envs":["API_KEY"],"public":true,"log_level":"debug","cron":""}
