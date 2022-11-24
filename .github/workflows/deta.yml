@@ -15,3 +15,8 @@ jobs:
           deta-access-token: ${{ secrets.DETA_TOKEN }} #Deta access token https://docs.deta.sh/docs/cli/auth
           deta-name: 'api' #Deta Micro name https://docs.deta.sh/docs/cli/commands/#deta-clone
           deta-project-dir: './api' #Optional: directory to be deployed on Deta. Default is the root "." 
+
+      - uses: wei/curl@master
+        with:
+          args: https://api.is-really.cool/addnew
+
