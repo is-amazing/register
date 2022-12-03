@@ -19,11 +19,14 @@ We are a group of people who want to help developers have a platform to showcase
 6. Enjoy your new `is-really.cool` domain!! 🥳
 
 ## Similar Services
-- [is-a-good.dev](https://github.com/is-a-good-dev/Register)
-- [is-not-a.dev](https://is-not-a.dev)
-- [cluster.ws & wip.la](https://github.com/Olivr/free-domain)
-- [js.org](https://github.com/js-org/js.org/tree/master) (*JavaScript projects only*)
+
 - [is-a.dev](https://github.com/is-a-dev/register)
+- [is-a-good.dev](https://github.com/is-a-good-dev/register)
+- [thedev.id](https://github.com/fransallen/thedev.id)
+- [is-not-a.dev & localplayer.dev](https://github.com/open-domains/register)
+- [cluster.ws & wip.la](https://github.com/Olivr/free-domain)
+- [is-really.cool](https://github.com/is-really-cool/register)
+- [js.org](https://github.com/js-org/js.org) (*JavaScript projects only*)
 
 ## Donate
 
@@ -34,7 +37,6 @@ This service cannot be going on forever without your help, Thank you all!
 
 You can contact us at help@is-really.cool
 
-
 ## Thanks
-Thanks to is-a.dev and thedev.id for the huge help and inspiration in this project. More updates will be pushed out soon!
 
+Thanks to is-a.dev and thedev.id for the huge help and inspiration in this project. More updates will be pushed out soon!
