@@ -20,6 +20,7 @@ We are a group of people who want to help developers have a platform to showcase
 
 ## Similar Services
 
+- [Free Domains](https://github.com/free-domains/register)
 - [Open Domains](https://github.com/open-domains/register)
 - [is-a.dev](https://github.com/is-a-dev/register)
 - [is-a-good.dev](https://github.com/is-a-good-dev/register)
