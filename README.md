@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.ibb.co/55Tqr32/is-amazing.png" /></p>
+<p align="center"><img src="https://i.ibb.co/55Tqr32/is-amazing.png" width="200px"/></p>
 
 <h1 align="center">is-amaz.ing</h1>
 
