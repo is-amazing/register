@@ -1,6 +1,6 @@
 {  
     "subdomain": "joabutt",  
-    "url":  "joabutt.dev",
+    "url":  "blahblahbalh",
     "email": "me@joabutt.dev",
-    "type": "MX"
+    "type": "TXT"
 }
