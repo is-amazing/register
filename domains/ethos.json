@@ -1,5 +1,6 @@
 {  
     "subdomain": "ethos",  
     "url":  "ethos-bot.vercel.app",
-    "email": "cloudypriyanshu@gmail.com"
+    "email": "cloudypriyanshu@gmail.com",
+    "type": "CNAME"
 }
