@@ -6,6 +6,8 @@ Please follow the template given here or your pull request will not be accepted 
 
 ## To add define which record you want to add, add the type field to the json. Currently supported records: CNAME, A, TXT, MX
 
+** For MX records, you do not need to put in priority, as it is preset in the system.
+
 ## Template:
 ```
 {  
@@ -17,9 +19,11 @@ Please follow the template given here or your pull request will not be accepted 
 ```
 
 ## Example:
+```
 {  
     "subdomain": "joabutt",  
     "url":  "joabutt.dev",
     "email": "me@joabutt.dev",
     "type": "CNAME"
 }
+```
