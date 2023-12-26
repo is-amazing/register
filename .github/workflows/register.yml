@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: wei/curl@master
         with:
-          args: https://ircapi.tk/addnew
+          args: https://amazing-api.3.us-1.fl0.io/update_domains
