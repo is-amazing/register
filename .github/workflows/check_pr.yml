@@ -26,7 +26,7 @@ jobs:
         if: ${{ steps.json-yaml-validate.outcome == 'failure' }}
         uses: actions/github-script@v5
         with:
-          github-token: ${{ secrets.MY_GITHUB_TOKEN }} # use the created secret token
+          token: ${{ secrets.MY_GITHUB_TOKEN }} # use the created secret token
           script: |
             github.rest.issues.createComment({
               issue_number: context.issue.number,
