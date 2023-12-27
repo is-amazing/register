@@ -3,18 +3,21 @@ on:
   pull_request_target:
     paths:
       - 'domains/**/*.json'
-
+  
 permissions:
   contents: read
   pull-requests: write
   issues: write
-
+  
 jobs:  
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
+        with:
+         ref: ${{ github.event.pull_request.head.sha }}
+
       - name: json-yaml-validate
         id: json-yaml-validate
         uses: GrantBirki/json-yaml-validate@v2.4.0
