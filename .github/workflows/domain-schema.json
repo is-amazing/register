@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "subdomain": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^(https?://)?(?:[a-zA-Z-]+\\.){1,}(?:[a-zA-Z-]{2,})+$"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["A", "AAAA", "CNAME", "TXT", "MX", "SRV", "URI"]
+    }
+  },
+  "required": ["subdomain", "url", "email"],
+  "additionalProperties": false
+}
