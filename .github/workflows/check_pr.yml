@@ -7,6 +7,7 @@ on:
 permissions:
   contents: read
   pull-requests: write # enable write permissions for pull request comments
+  issues: write # pull requests are just issues with extra features
 
 jobs:  
   build:
