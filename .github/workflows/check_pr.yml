@@ -22,3 +22,4 @@ jobs:
           base_dir: './domains'
           json_schema: '.github/workflows/domain-schema.json'
           comment: "true" # enable comment mode
+          token: ${{ secrets.MY_GITHUB_TOKEN }} # Use your PAT
