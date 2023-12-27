@@ -4,35 +4,15 @@ on:
     paths:
       - 'domains/**/*.json'
 
-jobs:
-  check_json:
+jobs:  
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
+      - name: Checkout source code
         uses: actions/checkout@v2
-
-      - name: Check JSON
-        run: |
-          for jsonfile in $(find domains -name "*.json"); do
-            echo "\nProcessing ${jsonfile}"
-            if ! cat ${jsonfile} | jq empty; then 
-              echo "Failed parsing ${jsonfile}"
-              exit 1
-            fi
-            REQUIRED_FIELDS=('subdomain' 'url' 'email')
-            for field in ${REQUIRED_FIELDS[@]}; do
-              if ! cat "${jsonfile}" | jq -e "has(\"${field}\")"; then
-                echo "${field} does not exist in ${jsonfile}"
-                exit 1
-              fi
-            done
-            TYPE=$(jq -r '.type // "CNAME"' ${jsonfile})
-            URL=$(jq -r '.url' ${jsonfile})
-            if [ ${TYPE} = "CNAME" ] || [ -z ${TYPE} ]; then
-              # Only match URLs that don't have a subdirectory after the domain.
-              if echo ${URL} | grep -qE '^https?://[^/]*/.+/'; then
-                echo "URL in ${jsonfile} has subdirectories which is not allowed for CNAME records."
-                exit 1
-              fi
-            fi
-          done
+      - name: Validate JSON
+        uses: NirmalL/JSON-YAML-Validation@v1.3
+        with:
+          files: './domains/**/*.json'
+          schema: '.github/workflows/domain-schema.json'
+          fail_on_warnings: true
