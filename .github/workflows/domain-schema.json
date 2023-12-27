@@ -7,7 +7,7 @@
     },
     "url": {
       "type": "string",
-      "pattern": "^(https?://)?(?:[a-zA-Z-]+\\.){1,}(?:[a-zA-Z-]{2,})(\\/)?$"
+      "pattern": "^(https?://)?(?:[a-zA-Z-]+\\.){1,}(?:[a-zA-Z-]{2,})\\/?$"
     },
     "email": {
       "type": "string",
