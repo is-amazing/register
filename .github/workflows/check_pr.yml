@@ -1,6 +1,6 @@
 name: Check JSON on PR
 on:
-  pull_request:
+  pull_request_target:
     paths:
       - 'domains/**/*.json'
 
