@@ -13,6 +13,5 @@ jobs:
       - name: Validate JSON
         uses: NirmalL/JSON-YAML-Validation@v1.3
         with:
-          files: './domains/**/*.json'
-          schema: '.github/workflows/domain-schema.json'
-          fail_on_warnings: true
+          base_dir: '/domains'
+          json_schema: '.github/workflows/domain-schema.json'
