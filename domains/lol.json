@@ -1,5 +1,6 @@
 {  
     "subdomain": "lolmemer",  
     "url":  "https://lolmemer.lollipoplol.repl.co",
-    "email": "adityapcgaming1@gmail.com"
+    "email": "adityapcgaming1@gmail.com",
+    "type": "CNAME"
 }
