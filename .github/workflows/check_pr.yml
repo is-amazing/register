@@ -29,9 +29,9 @@ jobs:
             TYPE=$(jq -r '.type // "CNAME"' ${jsonfile})
             URL=$(jq -r '.url' ${jsonfile})
             if [ ${TYPE} = "CNAME" ] || [ -z ${TYPE} ]; then
-              # We add a `.*[^/]$` at the end to allow URLs that end with '/'
-              if echo ${URL} | grep -qE '^https?://[^/]*/.*[^/]$'; then
-                echo "URL in ${jsonfile} must not contain subdirectories for CNAME records."
+              # Only match URLs that don't have a subdirectory after the domain.
+              if echo ${URL} | grep -qE '^https?://[^/]*/.+/'; then
+                echo "URL in ${jsonfile} has subdirectories which is not allowed for CNAME records."
                 exit 1
               fi
             fi
