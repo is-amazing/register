@@ -6,8 +6,8 @@ on:
 
 permissions:
   contents: read
-  pull-requests: write # enable write permissions for pull request comments
-  issues: write # pull requests are just issues with extra features
+  pull_requests: write
+  issues: write
 
 jobs:  
   build:
@@ -21,5 +21,15 @@ jobs:
         with:
           base_dir: './domains'
           json_schema: '.github/workflows/domain-schema.json'
-          comment: "true" # enable comment mode
-          token: ${{ secrets.MY_GITHUB_TOKEN }} # Use your PAT
+        continue-on-error: true
+      - name: Comment on PR
+        if: ${{ steps.json-yaml-validate.outcome == 'failure' }}
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "❌ JSON validation failed!"
+            });
