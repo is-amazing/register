@@ -12,7 +12,7 @@ We are a group of people who want to help developers have a platform to showcase
 ## Registration
 
 1. Go to [this website](https://check.is-amaz.ing/) to check for the availability your domain.
-2. Create a static site with some hosting providers, some being: [Github pages](https://pages.github.com), [Surge](https://surge.sh), etc.
+2. Create a static site with some hosting providers, some being: [Cloudflare Pages](https://pages.dev), [Surge](https://surge.sh), etc.
 3. After setting up your site, [Fork](https://github.com/is-amazing/register/fork) this repo and under the domains folder, then read the file template [Here](https://github.com/is-amazing/register/blob/main/JSON_TEMPLATE.md). If your file does not follow the required template, your pull request will **NOT** be merged. After reading the template, you can add your json file under the domains folder, and then create a pull request.
 4. Send your pull request, and your request will be reviewed and if the requirements are met, will be merged. Do keep an eye on it!~
 5. After your request has been merged, please give us up to 24 hours for the servers to propagate the changes. 
