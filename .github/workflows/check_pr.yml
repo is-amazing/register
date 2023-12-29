@@ -19,6 +19,8 @@ jobs:
       - name: Get list of changed files
         id: files
         uses: lots0logs/gh-action-get-changed-files@2.1.4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: validate each changed JSON file
         run: |
           for file in ${{ steps.files.outputs.all }}
