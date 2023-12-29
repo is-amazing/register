@@ -1,0 +1,14 @@
+[
+  {
+    "subdomain": "joabutt",
+    "type": "CNAME",
+    "url": "joabutt.dev",
+    "email": "me@joabutt.dev"
+  },
+  {
+    "subdomain": "joabutt1",
+    "type": "TXT",
+    "url": "aslkfjhalskfjaksjhfasfasfas",
+    "email": "me@joabutt.dev"
+  }
+]
