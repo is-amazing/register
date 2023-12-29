@@ -20,17 +20,20 @@ jobs:
       - name: Get list of changed files
         run: echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.event.pull_request.head.sha }})"
         id: getfiles
+      - name: Install json schema validator 'ajv-cli'
+        run: |
+          npm install -g ajv-cli
       - name: validate each changed JSON file
         run: |
           for file in ${{ steps.getfiles.outputs.files }}
           do
             if [[ $file == 'domains/'*'.json' ]]; then
                 echo "Validating $file"
-                json-yaml-validate $file domain-schema.json # validate here
+                ajv validate -s domain-schema.json -d $file # validate here
             fi
           done
       - name: Comment on PR if Invalid
-        if: ${{ steps.json-yaml-validate.outcome == 'failure' }}
+        if: ${{ failure() }}
         uses: actions/github-script@v5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -42,7 +45,7 @@ jobs:
               body: "❌ Your JSON file is invalid, please check the template again!"
             });
       - name: Comment on PR if Valid
-        if: ${{ steps.json-yaml-validate.outcome == 'success' }}
+        if: ${{ success() }}
         uses: actions/github-script@v5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
