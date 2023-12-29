@@ -17,31 +17,16 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
         with:
-         ref: ${{ github.event.pull_request.head.sha }}
-      
-      - name: Install Dependencies
-        run: npm install ajv-cli
-
-      - name: Get list of changed domain files
-        id: file_changes
-        run: |
-            set -ex
-            git fetch origin ${{ github.event.pull_request.base.ref }}
-            git diff --name-only FETCH_HEAD..${{ github.sha }} | { grep '^domains/.*\.json$' || true; } > changed_files.txt
-            cat changed_files.txt
-      
-      - name: JSON Schema Validate
-        run: |
-            set -ex
-            while read file; do
-              echo "Validating file: ${file}"
-              npx ajv-cli validate -s .github/workflows/domain-schema.json -d $file
-            done < changed_files.txt
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: json-yaml-validate
+        id: json-yaml-validate
+        uses: GrantBirki/json-yaml-validate@v2.4.0
+        with:
+          base_dir: './domains'
+          json_schema: '.github/workflows/domain-schema.json'
         continue-on-error: true
-
-
       - name: Comment on PR if Invalid
-        if: ${{ failure() }}
+        if: ${{ steps.json-yaml-validate.outcome == 'failure' }}
         uses: actions/github-script@v5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -52,20 +37,10 @@ jobs:
               repo: context.repo.repo,
               body: "❌ Your JSON file is invalid, please check the template again!"
             });
-      
       - name: Comment on PR if Valid
-        if: ${{ success() }}
+        if: ${{ steps.json-yaml-validate.outcome == 'success' }}
         uses: actions/github-script@v5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: "✅ Your JSON file is valid!"
-            });
-
-      - name: Fail Job
-        if: ${{ failure() }}
-        run: exit 1
