@@ -2,9 +2,7 @@ name: Check JSON on PR
 on:
   pull_request_target:
     types: [opened, synchronize]
-    paths:
-      - 'domains/**/*.json'
-  
+
 permissions:
   contents: read
   pull-requests: write
@@ -17,14 +15,19 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
-      - name: json-yaml-validate
-        id: json-yaml-validate
-        uses: GrantBirki/json-yaml-validate@v2.4.0
-        with:
-          base_dir: './domains'
-          json_schema: '.github/workflows/domain-schema.json'
-        continue-on-error: true
+          ref: ${{ github.event.pull_request.head.sha }}   
+      - name: Get list of changed files
+        id: files
+        uses: lots0logs/gh-action-get-changed-files@2.1.4
+      - name: validate each changed JSON file
+        run: |
+          for file in ${{ steps.files.outputs.all }}
+          do
+            if [[ $file == 'domains/'*'.json' ]]; then
+                echo "Validating $file"
+                json-yaml-validate $file domain-schema.json # validate here
+            fi
+          done
       - name: Comment on PR if Invalid
         if: ${{ steps.json-yaml-validate.outcome == 'failure' }}
         uses: actions/github-script@v5
@@ -44,3 +47,8 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "✅ Your JSON file is valid!"
+            });
