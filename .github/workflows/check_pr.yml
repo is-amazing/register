@@ -15,15 +15,13 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.pull_request.head.sha }}   
-      - name: Get list of changed files
-        id: files
-        uses: lots0logs/gh-action-get-changed-files@2.1.4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.event.pull_request.head.sha }}     
+      - name: Get All Changed Files
+        id: getfile
+        uses: jitterbit/get-changed-files@v1
       - name: validate each changed JSON file
         run: |
-          for file in ${{ steps.files.outputs.all }}
+          for file in ${{ steps.getfile.outputs.all }}
           do
             if [[ $file == 'domains/'*'.json' ]]; then
                 echo "Validating $file"
@@ -31,8 +29,8 @@ jobs:
             fi
           done
       - name: Comment on PR if Invalid
-        if: ${{ steps.json-yaml-validate.outcome == 'failure' }}
         uses: actions/github-script@v5
+        if: ${{ steps.json-yaml-validate.outcome == 'failure' }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
