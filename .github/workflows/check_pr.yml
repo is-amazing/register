@@ -25,17 +25,20 @@ jobs:
       - name: Get list of changed domain files
         id: file_changes
         run: |
+            set -ex
             git fetch origin ${{ github.event.pull_request.base.ref }}
             git diff --name-only FETCH_HEAD..${{ github.sha }} | { grep '^domains/.*\.json$' || true; } > changed_files.txt
             cat changed_files.txt
-
-
+      
       - name: JSON Schema Validate
         run: |
-          while read file; do
-            npx ajv-cli validate -s .github/workflows/domain-schema.json -d $file
-          done < changed_files.txt
+            set -ex
+            while read file; do
+              echo "Validating file: ${file}"
+              npx ajv-cli validate -s .github/workflows/domain-schema.json -d $file
+            done < changed_files.txt
         continue-on-error: true
+
 
       - name: Comment on PR if Invalid
         if: ${{ failure() }}
