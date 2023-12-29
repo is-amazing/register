@@ -20,16 +20,16 @@ jobs:
       - name: Get list of changed files
         run: echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.event.pull_request.head.sha }})"
         id: getfiles
-      - name: Install json schema validator 'ajv-cli'
+      - name: Install json schema validator 'ajv-cli' and 'ajv-formats'
         run: |
-          npm install -g ajv-cli
+          npm install -g ajv-cli ajv-formats
       - name: validate each changed JSON file
         run: |
           for file in ${{ steps.getfiles.outputs.files }}
           do
             if [[ $file == 'domains/'*'.json' ]]; then
                 echo "Validating $file"
-                ajv validate -s ${{ github.workspace }}/.github/workflows/domain-schema.json -d $file # validate here
+                ajv -c ajv-formats validate -s ${{ github.workspace }}/.github/workflows/domain-schema.json -d $file # validate here
             fi
           done
       - name: Comment on PR if Invalid
