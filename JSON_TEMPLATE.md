@@ -11,20 +11,44 @@ Please follow the template given here or your pull request will not be accepted 
 
 ## Template:
 ```
-{  
-    "subdomain": "YOUR_SUBDOMAIN_HERE",  
-    "url":  "YOUR_SITE_URL_HERE",
-    "email": "YOUR_EMAIL_HERE",
-    "type": "YOUR_TYPE_HERE"
-}
+[
+    {  
+        "subdomain": "YOUR_SUBDOMAIN_HERE",  
+        "url":  "YOUR_SITE_URL_HERE",
+        "email": "YOUR_EMAIL_HERE",
+        "type": "YOUR_TYPE_HERE"
+    }
+]
 ```
 
 ## Example:
 ```
-{  
-    "subdomain": "joabutt",  
-    "url":  "joabutt.dev",
-    "email": "me@joabutt.dev",
-    "type": "CNAME"
-}
+[
+    {  
+        "subdomain": "joabutt",  
+        "url":  "joabutt.dev",
+        "email": "me@joabutt.dev",
+        "type": "CNAME"
+    }
+]
+```
+
+## Add multiple records
+
+```
+[
+  {
+    "subdomain": "YOUR_SUBDOMAIN_HERE",
+    "type": "TYPE_OF_THE_RECORD",
+    "url": "URL_OR_VALUE_OF_THE_RECORD",
+    "email": "EMAIL_OR_PREFERENCE"
+  },
+  {
+    "subdomain": "YOUR_SUBDOMAIN_HERE",
+    "type": "TYPE_OF_THE_SECOND_RECORD",
+    "url": "URL_OR_VALUE_OF_THE_SECOND_RECORD",
+    "email": "EMAIL_OR_PREFERENCE"
+  }
+]
+
 ```
