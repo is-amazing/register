@@ -8,8 +8,7 @@
         "type": "string"
       },
       "url": {
-        "type": "string",
-        "pattern": "^(https?://)?(?:[a-zA-Z0-9-]+\\.){1,}(?:[a-zA-Z0-9-]{2,})\\/?$"
+        "type": "string"
       },
       "email": {
         "type": "string",
@@ -20,7 +19,33 @@
         "enum": ["A", "CNAME", "TXT", "MX"]
       }
     },
-    "required": ["subdomain", "url", "email"],
-    "additionalProperties": false
+    "required": ["subdomain", "email"],
+    "additionalProperties": false,
+    "if": {
+      "anyOf": [
+        {
+          "properties": {
+            "type": {
+              "const": "CNAME"
+            }
+          }
+        },
+        {
+          "not": {
+            "required": ["type"]
+          }
+        }
+      ]
+    },
+    "then": {
+      "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "^(https?://)?(?:[a-zA-Z0-9-]+\\.){1,}(?:[a-zA-Z0-9-]{2,})\\/?$"
+        }
+      },
+      "required": ["url"]
+    },
+    "else": {}
   }
 }
