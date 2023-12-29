@@ -29,7 +29,7 @@ jobs:
           do
             if [[ $file == 'domains/'*'.json' ]]; then
                 echo "Validating $file"
-                ajv validate -s domain-schema.json -d $file # validate here
+                ajv validate -s ${{ github.workspace }}/.github/workflows/domain-schema.json -d $file # validate here
             fi
           done
       - name: Comment on PR if Invalid
