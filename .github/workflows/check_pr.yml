@@ -25,9 +25,10 @@ jobs:
       - name: Get list of changed domain files
         id: file_changes
         run: |
-          git fetch origin ${{ github.event.pull_request.base.ref }}
-          git diff --name-only FETCH_HEAD..${{ github.sha }} | grep '^domains/.*\.json$' > changed_files.txt
-          cat changed_files.txt
+            git fetch origin ${{ github.event.pull_request.base.ref }}
+            git diff --name-only FETCH_HEAD..${{ github.sha }} | { grep '^domains/.*\.json$' || true; } > changed_files.txt
+            cat changed_files.txt
+
 
       - name: JSON Schema Validate
         run: |
