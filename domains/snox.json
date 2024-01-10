@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "snox",  
+        "url":  "snox.codes",
+        "email": "hello@snox.codes",
+        "type": "CNAME"
+    }
+]
