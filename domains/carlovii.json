@@ -1,8 +1,8 @@
 [
     {  
         "subdomain": "carlovii",  
-        "url":  "162.251.120.210",
+        "url":  "carlovii.pages.dev",
         "email": "cyberflixdevs@gmail.com",
-        "type": "A"
+        "type": "CNAME"
     }
 ]
