@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "trump",  
+        "url":  "trump.great-site.net",
+        "email": "enonline@proton.me",
+        "type": "CNAME"
+    }
+]
