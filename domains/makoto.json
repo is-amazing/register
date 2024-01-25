@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "makoto",  
+        "url":  "asthriona-space.pages.dev",
+        "email": "ping@asthriona.com",
+        "type": "CNAME"
+    }
+]
