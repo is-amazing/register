@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "sag",  
+        "url":  "sag.codeberg.page",
+        "email": "sagxd@protonmail.com",
+        "type": "CNAME"
+    }
+]
