@@ -1,0 +1,32 @@
+[
+    {  
+        "subdomain": "fiftyseven",  
+        "url":  "fiftys7ven.pages.dev",
+        "email": "plwmail@duck.com",
+        "type": "CNAME"
+    }
+]
+[
+    {  
+        "subdomain": "this",  
+        "url":  "fiftys7ven.pages.dev",
+        "email": "plwmail@duck.com",
+        "type": "CNAME"
+    }
+]
+[
+    {  
+        "subdomain": "that",  
+        "url":  "fiftys7ven.pages.dev",
+        "email": "plwmail@duck.com",
+        "type": "CNAME"
+    }
+]
+[
+    {  
+        "subdomain": "fifty",  
+        "url":  "fiftys7ven.pages.dev",
+        "email": "plwmail@duck.com",
+        "type": "CNAME"
+    }
+]
