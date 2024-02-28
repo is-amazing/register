@@ -1,0 +1,58 @@
+name: Check JSON on PR
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - name: Get list of changed files
+        run: echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.event.pull_request.head.sha }})"
+        id: getfiles
+      - name: Install json schema validator 'ajv-cli' and 'ajv-formats'
+        run: |
+          npm install -g ajv-cli ajv-formats
+      - name: validate each changed JSON file
+        run: |
+          for file in ${{ steps.getfiles.outputs.files }}
+          do
+            if [[ $file == 'domains/'*'.json' ]]; then
+                echo "Validating $file"
+                ajv -c ajv-formats validate -s ${{ github.workspace }}/.github/workflows/domain-schema.json -d $file # validate here
+            fi
+          done
+      - name: Comment on PR if Invalid
+        if: ${{ failure() }}
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "❌ Your JSON file is invalid, please check the template again!"
+            });
+      - name: Comment on PR if Valid
+        if: ${{ success() }}
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "✅ Your JSON file is valid!"
+            });
