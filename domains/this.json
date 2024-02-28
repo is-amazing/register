@@ -1,5 +1,6 @@
 {  
     "subdomain": "this",  
-    "url":  "heyayyu.github.io",
+    "url":  "galileo.aternos.org", "colombus.aternos.org"
     "email": "imrbk123abc@gmail.com"
+    "type": "NS"
 }
