@@ -2,5 +2,5 @@
     "subdomain": "this",  
     "url":  "galileo.aternos.org", "colombus.aternos.org"
     "email": "imrbk123abc@gmail.com"
-    "type": "NS"
+    "type": "nameserver"
 }
