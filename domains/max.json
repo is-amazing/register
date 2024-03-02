@@ -2,6 +2,7 @@
     {  
         "subdomain": "max",  
         "url":  "https://1dbab673.amazing-e86.pages.dev/",
-        "email": "maxuss@bingchilling.com"
+        "email": "maxuss@bingchilling.com",
+        "type": "CNAME"
     }
 ]
