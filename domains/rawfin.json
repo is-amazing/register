@@ -1,0 +1,8 @@
+[
+    {  
+    "subdomain": "rawfin",  
+    "url":  "rawfin.pages.dev",
+    "email": "hello@rawfin.net",
+    "type": "CNAME"
+    }
+]
