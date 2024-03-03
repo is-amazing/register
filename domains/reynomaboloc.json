@@ -4,5 +4,11 @@
         "url":  "reynomaboloc.dev",
         "email": "reynomaboloc@gmail.com",
         "type": "CNAME"
+    },
+    {
+        "subdomain": "reynomaboloc",  
+        "url":  "reynomaboloc.is-amaz.ing",
+        "email": "reynomaboloc@gmail.com",
+        "type": "CNAME"
     }
 ]
