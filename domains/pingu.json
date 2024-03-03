@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "pingu",  
+        "url":  "pingulovesyou.vercel.app",
+        "email": "pingudiscord@proton.me",
+        "type": "TXT"
+    }
+]
