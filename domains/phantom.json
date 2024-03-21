@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "phantom",  
+        "url":  "phantom.pages.dev",
+        "email": "sealedsaucer@gmail.com",
+        "type": "CNAME"
+    }
+]
