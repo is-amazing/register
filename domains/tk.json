@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "tk",  
+        "url":  "tkkr.tplinkdns.com",
+        "email": "tk@tkkr.dev",
+        "type": "CNAME"
+    }
+]
