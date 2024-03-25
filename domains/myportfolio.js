@@ -1,7 +1,7 @@
 [
     {  
         "subdomain": "myportfolio",  
-        "url":  "myportfolio.is-amazing",
+        "url":  "myportfolio.is-amaz.ing",
         "email": "amenetaka@gmail.com",
         "type": "CNAME"
     }
