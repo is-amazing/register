@@ -1,8 +1,8 @@
 [
     {  
-        "subdomain": "uynilo9.is-amaz.ing",  
+        "subdomain": "uynilo9",  
         "url":  "uynilo9.pages.dev",
         "email": "uynilo9@outlook.com",
-        "type": "cname"
+        "type": "CNAME"
     }
 ]
