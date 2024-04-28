@@ -1,26 +1,8 @@
 [
     {  
-        "subdomain": "repo",  
-        "url":  "212.132.119.47",
-        "email": "school.danlp6.com@outlook.de",
-        "type": "A"
-    },
-    {  
-        "subdomain": "repository",  
-        "url":  "212.132.119.47",
-        "email": "school.danlp6.com@outlook.de",
-        "type": "A"
-    },
-    {  
         "subdomain": "danlp6",  
         "url":  "danlp6.myftp.biz",
         "email": "school.danlp6.com@outlook.de",
         "type": "CNAME"
-    },
-    {  
-        "subdomain": "danlp1",  
-        "url":  "89.132.119.47",
-        "email": "school.danlp6.com@outlook.de",
-        "type": "A"
-    },
+    }
 ]
