@@ -1,0 +1,22 @@
+[
+    {  
+        "subdomain": "ai",  
+        "url":  "go-proxy-bingai-579.pages.dev",
+        "email": "red@pissmail.com",
+        "type": "CNAME"
+    },
+
+      {  
+        "subdomain": "it",  
+        "url":  "air-conditioner-77w.pages.dev",
+        "email": "red@pissmail.com",
+        "type": "CNAME"
+    },
+        
+   {  
+        "subdomain": "one",  
+        "url":  "chatgpt-next-web-3ep.pages.dev",
+        "email": "red@pissmail.com",
+        "type": "CNAME"
+    }
+]
