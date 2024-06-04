@@ -1,0 +1,14 @@
+[
+  {
+    "subdomain": "devblog",
+    "type": "CNAME",
+    "url": "https://blog-dev-ashy.vercel.app/",
+    "email": "odaribq@gmail.com"
+  },
+  {
+    "subdomain": "learndev",
+    "type": "CNAME",
+    "url": "https://learn-dev-phi.vercel.app/",
+    "email": "odaribq@gmail.com"
+  }
+]
