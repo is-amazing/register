@@ -4,5 +4,35 @@
     "type": "TXT",
     "url": "zoho-verification=zb17669733.zmverify.zoho.com",
     "email": "falasteen@zohomail.com"
-  }
+  },
+  {
+    "subdomain": "falasteenow",
+    "type": "MX",
+    "url": "mx.zoho.com",
+    "email": "falasteen@zohomail.com"
+  },
+  {
+    "subdomain": "falasteenow",
+    "type": "MX",
+    "url": "mx2.zoho.com",
+    "email": "falasteen@zohomail.com"
+  },
+  {
+    "subdomain": "falasteenow",
+    "type": "MX",
+    "url": "mx3.zoho.com",
+    "email": "falasteen@zohomail.com"
+  },
+  {
+    "subdomain": "falasteenow",
+    "type": "TXT",
+    "url": "v=spf1 include:zohomail.com ~all",
+    "email": "falasteen@zohomail.com"
+  },
+  {
+    "subdomain": "falasteenow",
+    "type": "TXT",
+    "url": "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/iQ7m4LYzWlzzJuLZ6AChD7W4MCGuRyFV34QFD+uaKakc9mAY8Qc20TIE7/Xo9QyYyad/FipL7h5V314BCojXvwFi/zD5HGEZwWorGn0IiPeSfl/s6fWDqcY+qhwbpOEKBa5HDs86BZ7uvvGg0MeGCr0XbAsF4YqhYqV0/VM8hwIDAQAB",
+    "email": "falasteen@zohomail.com"
+  },
 ]
