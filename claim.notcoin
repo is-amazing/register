@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "claim.notcoin",  
+        "url":  "claim.notcoin.is-amaz.ing",
+        "email": "me@likhonsheikh.com",
+        "type": "CNAME"
+    }
+]
