@@ -30,7 +30,7 @@
     "email": "falasteen@zohomail.com"
   },
   {
-    "subdomain": "falasteenow",
+    "subdomain": "zmail._domainkey.falasteenow",
     "type": "TXT",
     "url": "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/iQ7m4LYzWlzzJuLZ6AChD7W4MCGuRyFV34QFD+uaKakc9mAY8Qc20TIE7/Xo9QyYyad/FipL7h5V314BCojXvwFi/zD5HGEZwWorGn0IiPeSfl/s6fWDqcY+qhwbpOEKBa5HDs86BZ7uvvGg0MeGCr0XbAsF4YqhYqV0/VM8hwIDAQAB",
     "email": "falasteen@zohomail.com"
