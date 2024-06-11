@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "guess-who",  
+        "url":  "rayr.link",
+        "email": "rayrsn@proton.me",
+        "type": "CNAME"
+    }
+]
