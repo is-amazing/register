@@ -3,6 +3,6 @@
         "subdomain": "wackydev",  
         "url":  "https://arzejames.github.io/WackyDevWebsite/",
         "email": "turtles127855@gmail.com",
-        "type": "TXT"
+        "type": "CNAME"
     }
 ]
