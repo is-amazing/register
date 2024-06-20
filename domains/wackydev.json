@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "wackydev",  
+        "url":  "wackydev.netlify.app",
+        "email": "turtles127855@gmail.com",
+        "type": "CNAME"
+    }
+]
