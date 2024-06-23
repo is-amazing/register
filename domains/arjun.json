@@ -1,5 +1,8 @@
-{  
-    "subdomain": "arjun",  
-    "url":  "ciprit.netlify.app",
-    "email": "arjun-anon@protonmail.com"
-}
+[
+    {  
+        "subdomain": "arjun",  
+        "url":  "arjun9124.github.io",
+        "email": "pyramidbreakeryt@gmail.com",
+        "type": "CNAME"
+    }
+]
