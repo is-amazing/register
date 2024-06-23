@@ -1,14 +1,8 @@
 [
-  {
-    "subdomain": "arjun",
-    "type": "CNAME",
-    "url": "arjun9124.github.io/hugo",
-    "email": "pyramidbreakeryt@gmail.com"
-  },
-  {
-    "subdomain": "quarantinearjun",
-    "type": "CNAME",
-    "url": "arjun9124.github.io/oldsite",
-    "email": "pyramidbreakeryt@gmail.com"
-  }
+    {  
+        "subdomain": "arjun",  
+        "url":  "arjun9124.github.io",
+        "email": "pyramidbreakeryt@gmail.com",
+        "type": "CNAME"
+    }
 ]
