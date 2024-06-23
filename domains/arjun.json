@@ -1,8 +1,14 @@
 [
     {  
-        "subdomain": "YOUR_SUBDOMAIN_HERE",  
-        "url":  "YOUR_SITE_URL_HERE",
-        "email": "YOUR_EMAIL_HERE",
-        "type": "YOUR_TYPE_HERE"
+        "subdomain": "arjun",  
+        "url":  "arjun9124.github.io/hugo",
+        "email": "pyramidbreakeryt@gmail.com",
+        "type": "CNAME"
+    }
+    {  
+        "subdomain": "oldarjun",  
+        "url":  "arjun9124.github.io/oldsite",
+        "email": "pyramidbreakeryt@gmail.com",
+        "type": "CNAME"
     }
 ]
