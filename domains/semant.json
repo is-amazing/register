@@ -1,5 +1,6 @@
-{ 
-  "subdomain": "semant",
-  "url": "web-0wfb.onrender.com",
-  "email": "contact@semant.is-a.dev"
+{
+   "subdomain": "semant",
+   "url": "cname.vercel-dns.com.",
+   "email": "contact@semant.is-a.dev",
+   "type": "CNAME"
 }
