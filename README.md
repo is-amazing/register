@@ -27,8 +27,6 @@ We are a group of people who want to help developers have a platform to showcase
 - [thedev.id](https://github.com/fransallen/thedev.id)
 - [cluster.ws & wip.la](https://github.com/Olivr/free-domain)
 - [js.org](https://github.com/js-org/js.org) (*JavaScript projects only*)
-- [is-an.app](https://github.com/tarampampam/free-domains)
-- [Dee.al](https://domain.dee.al)
 - [js.cool](https://github.com/willin/js.cool/blob/master/README.en.md)
 
 
