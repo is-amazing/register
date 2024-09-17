@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "gaurav",  
+        "url":  "edge.redirect.pizza",
+        "email": "gauravchandsi@outlook.com",
+        "type": "CNAME"
+    }
+]
