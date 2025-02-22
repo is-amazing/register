@@ -1,0 +1,20 @@
+[
+  {
+    "subdomain": "jonathan",
+    "type": "TXT",
+    "url": "google-site-verification=QdTA1Sld9lSNF9UlsUao5q0M6tAY2S_hamZwgIpsfEo",
+    "email": "jonathan.russ@bluewin.ch"
+  },
+  {
+    "subdomain": "_vercel",
+    "type": "TXT",
+    "url": "vc-domain-verify=jonathan.is-amaz.ing,6ccba0ff9e8dc52b4a88",
+    "email": "jonathan.russ@bluewin.ch"
+  },
+  {
+    "subdomain": "_discord.jonathan.is-amaz.ing",
+    "type": "TXT",
+    "url": "dh=c89f9d1ab2aa01ae6f6ec2cb229dcedd8878a235",
+    "email": "jonathan.russ@bluewin.ch"
+  }
+]
