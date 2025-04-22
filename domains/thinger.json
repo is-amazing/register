@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "thinger",  
+        "url":  "thinger.pages.dev",
+        "email": "eenspons@gmail.com",
+        "type": "CNAME"
+    }
+]
