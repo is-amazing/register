@@ -1,0 +1,14 @@
+[
+    {  
+        "subdomain": "colin",  
+        "url":  "proxy.col1n.fr",
+        "email": "webmaster@col1n.fr",
+        "type": "CNAME"
+    },
+    {  
+        "subdomain": "_discord.colin",  
+        "url":  "dh=9018742b73dbf4dacd2f2a6526876fc10e0e7b7f",
+        "email": "webmaster@col1n.fr",
+        "type": "TXT"
+    }
+]
