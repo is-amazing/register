@@ -1,5 +1,8 @@
-{ 
-  "subdomain": "slime",
-  "url": "slimeu.glitch.me",
-  "email": "purpleblueslime@gmail.com"
-}
+[
+    {  
+        "subdomain": "slime",  
+        "url":  "purpleblueslime.vercel.app",
+        "email": "purpleblueslime@gmail.com",
+        "type": "CNAME"
+    }
+]
