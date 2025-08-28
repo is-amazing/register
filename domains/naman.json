@@ -1,8 +1,8 @@
 [
     {  
         "subdomain": "naman",  
-        "url":  "naman.is-great.net",
+        "url":  ["185.27.134.222"],
         "email": "namandhakad712@gmail.com",
-        "type": "CNAME"
+        "type": "A"
     }
 ]
