@@ -1,7 +1,7 @@
 [
-    {  
-        "subdomain": "naman",  
-        "url":  ["185.27.134.222"],
+    {
+        "subdomain": "naman",
+        "url": "185.27.134.222",
         "email": "namandhakad712@gmail.com",
         "type": "A"
     }
