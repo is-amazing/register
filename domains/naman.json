@@ -1,8 +1,8 @@
 [
-    {
-        "subdomain": "naman",
-        "url": "185.27.134.222",
-        "email": "namandhakad712@gmail.com",
-        "type": "A"
+    {  
+        "subdomain": "naman",  
+        "url":  "naman712.vercel.app",
+        "email": "namandhakd712@gmail.com",
+        "type": "CNAME"
     }
 ]
