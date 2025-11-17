@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "shs",  
+        "url":  "sharonhs.vercel.app",
+        "email": "hi@smth.tech",
+        "type": "CNAME"
+    }
+]
