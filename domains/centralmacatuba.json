@@ -1,0 +1,8 @@
+[
+    {  
+        "subdomain": "centralmacatuba",  
+        "url":  "centralmacatuba.eu.org",
+        "email": "centralmacatuba@gmail.com",
+        "type": "CNAME"
+    }
+]
