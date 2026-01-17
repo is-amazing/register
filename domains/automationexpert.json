@@ -1,0 +1,32 @@
+[
+  {
+    "subdomain": "automationexpert",
+    "type": "CNAME",
+    "url": "automationexpert.netlify.app",
+    "email": "aswinmahesh.com+site@gmail.com"
+  },
+  {
+    "subdomain": "automationexpert",
+    "type": "TXT",
+    "url": "brevo-code:d8777e54528775ea50a5842cda15f3fb",
+    "email": "aswinmahesh.com+site@gmail.com"
+  },
+  {
+    "subdomain": "brevo1._domainkey.automationexpert",
+    "type": "CNAME",
+    "url": "b1.automationexpert-is-amaz-ing.dkim.brevo.com",
+    "email": "aswinmahesh.com+site@gmail.com"
+  },  
+  {
+    "subdomain": "brevo2._domainkey.automationexpert",
+    "type": "CNAME",
+    "url": "b2.automationexpert-is-amaz-ing.dkim.brevo.com",
+    "email": "aswinmahesh.com+site@gmail.com"
+  },  
+  {
+    "subdomain": "_dmarc.automationexpert",
+    "type": "TXT",
+    "url": "v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com",
+    "email": "aswinmahesh.com+site@gmail.com"
+  }  
+]
