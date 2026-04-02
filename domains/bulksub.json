@@ -1,7 +1,7 @@
 [
     {  
         "subdomain": "bulksub",  
-        "url": "github.com/maxim-lkc198/bulksub-waitlist-page",
+        "url": "bulksub.github.io",
         "email": "john@gmail.com",
         "type": "CNAME"
     }
