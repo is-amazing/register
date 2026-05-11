@@ -1,0 +1,12 @@
+{
+  "$schema": "../schemas/domain.schema.json",
+  "description": "Kipher personal site",
+  "domain": "is-amazing.dev",
+  "subdomain": "kipher",
+  "owner": {
+    "username": "ferfu64"
+  },
+  "record": {
+    "CNAME": "ferfu64.github.io"
+  }
+}
