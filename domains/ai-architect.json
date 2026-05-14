@@ -3,18 +3,23 @@
         "username": "Hali-creater",
         "email": "vaqarhali01@gmail.com"
     },
-    "name": "ai-architect",
+    "subdomain": "ai-architect",
     "records": {
-        "MX": [
-            {
-                "priority": 10,
-                "value": "mx1.improvmx.com"
-            },
-            {
-                "priority": 20,
-                "value": "mx2.improvmx.com"
-            }
+        "A": [
+            "185.199.108.153",
+            "185.199.109.153",
+            "185.199.110.153",
+            "185.199.111.153"
         ],
-        "TXT": "v=spf1 include:spf.improvmx.com ~all"
+        "MX": [
+            "mx1.improvmx.com",
+            "mx2.improvmx.com"
+        ],
+        "TXT": {
+            "url": "v=spf1 include:spf.improvmx.com ~all"
+        },
+        "CNAME": {
+            "agent": "the-rag-knowledge-base-agent-x4uzihm5bexrkeru87nh4g.streamlit.app"
+        }
     }
 }
