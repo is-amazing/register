@@ -1,9 +1,8 @@
-{
-    "owner": {
-          "username": "pyhe-pierce",
-          "email": "pyhe.pierce@gmail.com"
-    },
-    "record": {
-          "CNAME": "blue-scoops-nu.vercel.app"
-    }
-}
+[
+      {
+              "subdomain": "bluescoops",
+              "url": "blue-scoops-nu.vercel.app",
+              "email": "pyhe.pierce@gmail.com",
+              "type": "CNAME"
+      }
+]
