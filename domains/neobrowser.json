@@ -1,8 +1,1 @@
-[
-    {
-        "subdomain": "neobrowser",
-        "url":  "pitiflautico.github.io",
-        "email": "pitiflautico3@gmail.com",
-        "type": "CNAME"
-    }
-]
+[{"subdomain":"neobrowser","url":"pitiflautico.github.io/neobrowser","email":"pitiflautico3@gmail.com","type":"CNAME"}]
