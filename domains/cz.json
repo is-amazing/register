@@ -1,1 +1,8 @@
-
+{
+  "owner": {
+    "username": "Collusionz"
+  },
+  "record": {
+    "CNAME": "your-site.vercel.app"
+  }
+}
