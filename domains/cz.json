@@ -1,9 +1,8 @@
-{
-  "owner": {
-    "username": "Collusionz"
-  },
-  "record": {
-    "CNAME": "cz-navy.vercel.app",
-    "TXT": "vc-domain-verify=is-amaz.ing,30b8f34a2bb1748f986c"
-  }
-}
+[
+    {  
+        "subdomain": "cz",  
+        "url":  "https://cz-navy.vercel.app/",
+        "email": "a@gmail.com",
+        "type": "CNAME"
+    }
+]
