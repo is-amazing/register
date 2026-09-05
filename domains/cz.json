@@ -1,7 +1,7 @@
 [
     {  
         "subdomain": "cz",  
-        "url":  "https://cz-navy.vercel.app/",
+        "url":  "cz-navy.vercel.app",
         "email": "a@gmail.com",
         "type": "CNAME"
     }
