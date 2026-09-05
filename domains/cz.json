@@ -1,0 +1,14 @@
+[
+  {
+    "subdomain": "cz",
+    "url": "cz-navy.vercel.app",
+    "email": "cz@gmail.com",
+    "type": "CNAME"
+  },
+  {
+    "subdomain": "_vercel.cz",
+    "url": "vc-domain-verify=is-amaz.ing,30b8f34a2bb1748f986c",
+    "email": "cz@gmail.com",
+    "type": "TXT"
+  }
+]
