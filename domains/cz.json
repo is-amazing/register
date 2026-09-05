@@ -1,8 +1,8 @@
 [
-    {  
-        "subdomain": "cz",  
-        "url":  "cz-navy.vercel.app",
-        "email": "a@gmail.com",
-        "type": "CNAME"
-    }
+  {
+    "subdomain": "cz",
+    "url": "cz-navy.vercel.app",
+    "email": "a@gmail.com"
+    "type": "CNAME"
+  }
 ]
